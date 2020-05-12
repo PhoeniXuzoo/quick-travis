@@ -1,30 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import {get_idocData} from './stub-idoc';
 import { useForm } from 'react-hook-form';
 import { TextField, Button } from '@material-ui/core';
 
 
 function App() {
-  console.log(process.env.REACT_APP_API_URL);
-  const [idocNum, setIdocNum] = useState("");
-
+  //console.log(process.env.REACT_APP_API_URL);
 
   const { register, handleSubmit, errors } = useForm();
   // callback function for check eligibility.
   const onSubmit = data => {
     console.log(data);
   };
-
-  const handleChange = (event) =>{
-    setIdocNum(event.target.value);
-  }
-
-  // const handleSubmit = (event) =>{
-  //   console.log(get_idocData(idocNum));
-  //   document.getElementById("jsonData").innerHTML = JSON.stringify(get_idocData(idocNum))
-  //   //event.preventDefault();
-  // }
 
   return (
     <div className="App">
