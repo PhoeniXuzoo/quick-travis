@@ -6,8 +6,8 @@ import App from './App';
 function getDOM() {
   const div = document.createElement('div')
   div.innerHTML = `
-    <label for="username1">Username</label>
-    <input id="username1" />
+    <label for="username">Username</label>
+    <input id="username" />
     <button>Print Username</button>
   `
   return div
