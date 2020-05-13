@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { waitFor, getByLabelText, getByText, queryByTestId, getByTestId } from '@testing-library/dom';
+import { getByLabelText } from '@testing-library/dom';
 import App from './App';
 
 function getDOM() {
