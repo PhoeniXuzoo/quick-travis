@@ -30,7 +30,7 @@ export default function Home() {
     <div className="App">
       <div className="idocForm">
         <h5>Use IDOC numbers: A00147, A00367, A01054</h5>
-        <form onSubmit={}>
+        <form onSubmit={handleSubmit}>
           <label>
             IDOC number:
             <input data-testid="idocNumberInput" type="text" onChange={handleChange}/>
