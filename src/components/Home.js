@@ -20,7 +20,7 @@ export default function Home() {
   const handleSubmit = (event) =>{
     // console.log(idocNum);
     if (idocNum === 'A00147' || idocNum === 'A00367' || idocNum === 'A01054')
-      document.getElementById("Data").innerHTML = 'bilibili';
+      document.getElementById("Data").innerHTML = idocNum;
     else 
       document.getElementById("Data").innerHTML = 'illegal';
     event.preventDefault();
