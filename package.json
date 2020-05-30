@@ -22,7 +22,8 @@
     "build": "react-app-env --env-file=config/production.env build",
     "start:production": "react-app-env --env-file=config/production.env start",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "cypress": "^4.7.0",
     "react-app-env": "^1.2.3"
   }
 }

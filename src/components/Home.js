@@ -1,13 +1,4 @@
 import React, { useState } from 'react';
-import return_eligibility from '../check-eligibility';
-import { useForm } from 'react-hook-form';
-import { TextField, Button, Checkbox, Grid, FormControlLabel, Typography } from '@material-ui/core';
-import InfoIcon from '@material-ui/icons/Info';
-import CheckCircleIcon from '@material-ui/icons/CheckCircle';
-import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
-import { green, red } from '@material-ui/core/colors';
-import ReactTooltip from "react-tooltip";
-import { Link } from 'react-router-dom'
 
 export default function Home() {
 
@@ -35,7 +26,7 @@ export default function Home() {
             IDOC number:
             <input data-testid="idocNumberInput" type="text" onChange={handleChange}/>
           </label>
-          <input data-testid="submitBtn" type="submit" value="Submit"/>
+          <input data-cy="submitBtn" data-testid="submitBtn" type="submit" value="Submit"/>
         </form>
         <div data-testid ="Data" id="Data"></div>
       </div>
