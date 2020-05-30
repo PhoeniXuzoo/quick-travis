@@ -28,7 +28,7 @@ export default function Home() {
           </label>
           <input data-cy="submitBtn" data-testid="submitBtn" type="submit" value="Submit"/>
         </form>
-        <div data-testid ="Data" id="Data"></div>
+        <div data-cy="Data" data-testid ="Data" id="Data"></div>
       </div>
     </div>
   );
